@@ -1,0 +1,16 @@
+<div class="main">
+  <div class='my-card mt-5'>
+    <div class="form-check">
+        <label class="form-check-label" for="flexCheckDefault">Check It..!!</label>
+        <input class="form-check-input" type="checkbox" ngModel #c1="ngModel" id="flexCheckDefault">
+    </div>
+    <div class="mt-3 p-3" [class.changeColor]="c1.value">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nobis, culpa deserunt magnam asperiores,
+        temporibus molestiae veritatis dicta accusantium a optio! Repudiandae commodi dolorem culpa alias suscipit
+        temporibus. Necessitatibus, enim commodi exercitationem aliquam error magnam sunt maiores harum, recusandae quam
+        cum quos vel eum optio explicabo. Incidunt consequuntur dolor odit?
+      </p>
+    </div>
+  </div>
+</div>

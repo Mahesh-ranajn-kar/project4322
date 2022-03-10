@@ -1,0 +1,22 @@
+<div class="main">
+    <div class='my-card mt-5'>
+        <div class="display mb-2">
+            <label for="inputAmount1">First Name :</label>
+            <input id="inputAmount1" type="text" class="form-control" [(ngModel)]="fname" readonly="true">
+        </div>
+        <div class="display mb-2">
+            <label for="inputAmount2">Last Name :</label>
+            <input id="inputAmount2" type="text" class="form-control" [(ngModel)]="lname" readonly="true">
+        </div>
+        <div class="display mb-2">
+            <label for="inputAmount3">Age :</label>
+            <input id="inputAmount3" type="text" class="form-control" [(ngModel)]="age" readonly="true">
+        </div>
+
+        
+        <app-name (getFullName)="getFullNameFromChild($event)"></app-name>
+        <app-age (getUseAge)="getUseAgeFromChild($event)"></app-age>
+        
+    
+    </div>
+</div>

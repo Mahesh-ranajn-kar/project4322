@@ -1,0 +1,40 @@
+<div class="main">
+    <div class='my-card mt-5'>
+        <div class="display mb-3">
+            <label for="inputAmount">Enter Your Amount :</label>
+            <input id="inputAmount" type="number" class="form-control" [(ngModel)]="inputAmount">
+        </div>
+
+        <div class="combo">
+            <div class="left-combo">
+                <label for="leftCombo">To</label>
+                <select class="form-select mb-3" id='leftCombo' 
+                [(ngModel)]="leftComboValue">
+                    <option selected disabled hidden>--Select--</option>
+                    <option>IND</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                  </select>
+    
+            </div>
+            <div class="right-combo">
+                <label for="rightCombo">from</label>
+                <select id='rightCombo' class="form-select mb-3"
+                [(ngModel)]="rightComboValue">
+                    <option selected disabled hidden>--Select--</option>
+                    <option>IND</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                  </select>
+    
+            </div>
+        </div>
+
+        <div class="display mt-2">
+            <label for="inputAmount">Result :</label>
+            <input id="inputAmount" type="text" class="form-control" [(ngModel)]="resultAmount">
+        </div>
+        <button type="button" class="btn btn-primary mt-4" (click)="onConveryBtnClick()">Convert</button>
+    
+    </div>
+</div>

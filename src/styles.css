@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.my-card{
+    height: 30rem;
+    width: 30rem;
+    background-color: rgb(233, 232, 232);
+    padding: 1rem;
+}
+.combo{
+    display: flex;
+    justify-content:space-between ;
+}
+
+
+.combo > div{
+    width: 45%;
+}
+.nameDiv{
+    display: flex;
+    justify-content: space-between;
+}

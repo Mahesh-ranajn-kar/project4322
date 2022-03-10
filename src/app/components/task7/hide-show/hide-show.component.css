@@ -1,0 +1,22 @@
+.comment-area{
+    height: 32rem;
+    width: 30rem;
+    background-color: rgb(233, 232, 232);
+    padding: 1rem;
+}
+
+.scroll{
+    height: 28rem;
+    overflow-y: scroll;
+}
+
+.my-nav-link{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #1b1e22;
+    text-decoration: none;
+}
+
+.my-active{
+    color: rgb(139, 139, 211);
+}

@@ -1,0 +1,43 @@
+<div class="d-flex">
+    <div class="form-check pdr-5">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" 
+      id="flexRadioDefault1" value="id_1"  [(ngModel)]="choice">
+      <label class="form-check-label" for="flexRadioDefault1">
+        Weeks
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" 
+      id="flexRadioDefault2" value="id_2"  [(ngModel)]="choice">
+      <label class="form-check-label" for="flexRadioDefault2">
+        Months
+      </label>
+    </div>
+  </div>
+  
+  <div class="mt-3" *ngIf="choice !== ''">
+    <ul class="list-group" *ngIf="choice === 'id_1'">
+        <li class="list-group-item">Monday</li>
+        <li class="list-group-item">Tuesday</li>
+        <li class="list-group-item">Wednesday</li>
+        <li class="list-group-item">Thursday</li>
+        <li class="list-group-item">Friday</li>
+        <li class="list-group-item">Saturday</li>
+        <li class="list-group-item">Sunday</li>
+    </ul>
+    <ul class="list-group" *ngIf="choice === 'id_2'">
+        <li class="list-group-item">January</li>
+        <li class="list-group-item">February</li>
+        <li class="list-group-item">March</li>
+        <li class="list-group-item">April</li>
+        <li class="list-group-item">May</li>
+        <li class="list-group-item">June</li>
+        <li class="list-group-item">July</li>
+        <li class="list-group-item">August</li>
+        <li class="list-group-item">September</li>
+        <li class="list-group-item">October</li>
+        <li class="list-group-item">November</li>
+        <li class="list-group-item">December</li>
+    </ul>
+</div>
+  

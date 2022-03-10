@@ -1,0 +1,10 @@
+
+.card{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(202, 198, 198);
+    
+}
+.changeColor{
+    background-color: yellowgreen;
+}

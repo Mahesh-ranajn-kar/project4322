@@ -1,0 +1,36 @@
+<div class="main">
+    <div class='my-card mt-5'>
+        <div class="display mb-3">
+            <label for="inputAmount">Enter Your String :</label>
+            <input id="inputAmount" type="text" class="form-control" [(ngModel)]="inputStr">
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"
+            value="id_1" [(ngModel)]="strStyle">
+            <label class="form-check-label" for="flexRadioDefault1">
+                show string in uppercase
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+            value="id_2" [(ngModel)]="strStyle">
+            <label class="form-check-label" for="flexRadioDefault2">
+                show string in reverse
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"
+            value="id_3" [(ngModel)]="strStyle">
+            <label class="form-check-label" for="flexRadioDefault3">
+                show half string in uppercase and half string in lowercase
+            </label>
+        </div>
+        <div class="display mt-3">
+            <label for="inputAmount">Output :</label>
+            <input id="inputAmount" type="text" class="form-control" [(ngModel)]="outputStr" readonly="true">
+        </div>
+        <button type="button" class="btn btn-primary mt-4" (click)="onBtnClick()">Click</button>
+    
+    </div>
+</div>

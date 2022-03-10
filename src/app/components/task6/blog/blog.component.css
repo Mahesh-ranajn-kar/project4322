@@ -1,0 +1,11 @@
+.comment-area{
+    height: 30rem;
+    width: 30rem;
+    background-color: rgb(233, 232, 232);
+    padding: 1rem;
+}
+
+.scroll{
+    height: 28rem;
+    overflow-y: scroll;
+}
