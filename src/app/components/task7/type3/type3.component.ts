@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Type3Component implements OnInit {
 
-  choice: string = ''
-  num: string = '1'
+  choice: string = '';
 
   constructor() { }
 
