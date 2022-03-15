@@ -2,11 +2,11 @@
     <div class='my-card mt-5'>
         <div class="display mb-3">
             <label for="inputAmount">Enter Your Number :</label>
-            <input id="inputAmount" type="number" class="form-control" [(ngModel)]="inputNumber">
+            <input id="inputAmount" type="number" class="form-control" ngModel #inputNumber="ngModel">
         </div>
 
-        <app-factorial [data]="getFactorial()"></app-factorial>
-        <app-square [sqr]="inputNumber"></app-square>
+        <app-factorial [fact]="inputNumber.value"></app-factorial>
+        <app-square [sqr]="inputNumber.value"></app-square>
     
     </div>
 </div>

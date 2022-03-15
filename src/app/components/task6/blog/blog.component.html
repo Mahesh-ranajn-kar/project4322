@@ -1,5 +1,6 @@
 <div class="main">
   <div class='comment-area mt-5 p-3'>
+      <h2>All User Comments</h2>
       <div class="p-3 scroll">
           <div *ngFor="let i of comments">
               <app-comment [comment]="i.comment" [author]="i.author"></app-comment>

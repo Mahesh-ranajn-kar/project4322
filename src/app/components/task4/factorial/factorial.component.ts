@@ -7,8 +7,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FactorialComponent implements OnInit {
 
-  @Input() data: any
-  resData:any = ''
+  resData:number = 0
+
+  @Input() set fact(inputNumber:number){
+    let res = 1
+    this.resData = 1;
+
+    for(let i = 1; i <= inputNumber; i++){
+      res *= i;
+    } 
+    this.resData = res;
+  }
+
+  
   constructor() { }
 
   ngOnInit(): void {

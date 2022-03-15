@@ -16,7 +16,7 @@ export class SquareComponent implements OnInit, OnChanges {
   constructor() { }
   
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes.sqr.currentValue)
+    // console.log(changes.sqr.currentValue)
   }
 
   ngOnInit(): void {

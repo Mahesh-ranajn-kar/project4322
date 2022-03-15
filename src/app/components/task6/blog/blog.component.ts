@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UserDataService, Comment } from 'src/app/service/user-data.service';
 
-interface Comment{
-  comment: string,
-  author: string
-}
+
 
 @Component({
   selector: 'app-blog',
@@ -14,16 +12,10 @@ export class BlogComponent implements OnInit {
 
   comments: Comment[] = []; 
 
-  constructor() { }
+  constructor(private userData:UserDataService) {
+    this.comments = userData.getUserComments()
+   }
 
-  ngOnInit(): void {
-
-    for(let i = 0; i < 10; i++){
-      this.comments.push({
-        comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit reprehenderit voluptatem rem vel reiciendis animi porro non perferendis minima.",
-        author: "Lorem ipsum dolor"
-      })
-    }
-  }
+  ngOnInit(): void {}
 
 }
